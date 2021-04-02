@@ -1,4 +1,4 @@
-function Set-AzCentralAdminMachine
+function Set-AzCentralAdminIPAddress
 {
     [CmdletBinding()]
     param(

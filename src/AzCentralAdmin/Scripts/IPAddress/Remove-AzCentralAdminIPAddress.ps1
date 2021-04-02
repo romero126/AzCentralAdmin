@@ -1,4 +1,4 @@
-function Remove-AzCentralAdminMachine
+function Remove-AzCentralAdminIPAddress
 {
     [CmdletBinding()]
     param(
@@ -13,7 +13,13 @@ function Remove-AzCentralAdminMachine
         # Specify a Name
         # </summary>
         [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName, Position = 1)]
-        [string] $Name
+        [string] $Name,
+
+        # <summary>
+        # Specify an Interface
+        # </summary>
+        [Parameter(Mandatory, ValueFromPipelineByPropertyName)]
+        [int] $IfIndex
     )
 
     begin

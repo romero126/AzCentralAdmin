@@ -42,7 +42,7 @@ function New-AzCentralAdminIPAddress
 
     process
     {
-        $Exists = Get-AzCentralAdminIPAddress -ComputerName $Name
+        $Exists = Get-AzCentralAdminIPAddress -Name $Name -IfIndex $IfIndex
         if ($Exists)
         {
             Write-Error "Name $Name already exists"

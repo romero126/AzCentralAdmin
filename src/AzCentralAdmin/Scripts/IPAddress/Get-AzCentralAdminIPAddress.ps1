@@ -1,4 +1,4 @@
-function Get-AzCentralAdminMachine
+function Get-AzCentralAdminIPAddress
 {
     [CmdletBinding()]
     param (            
@@ -11,9 +11,11 @@ function Get-AzCentralAdminMachine
         # <summary>
         # Specify Name
         # </summary>
-        [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName, Position = 1)]
-        [string] $Name
+        [Parameter(ValueFromPipeline, ValueFromPipelineByPropertyName, Position = 1)]
+        [string] $Name,
 
+        [Parameter()]
+        [int] $IfIndex
     )
 
     begin
@@ -32,9 +34,14 @@ function Get-AzCentralAdminMachine
         }
         
         if ($Name) {
-            $Items = $Items | Where-Object { $_.Name -match $ComputerName }
+            $Items = $Items | Where-Object { $_.Name -match $Name }
         }
 
+        if ($IfIndex)
+        {
+            $Items = $Items | Where-Object { $_.IfIndex -match $IfIndex}
+        }
+        
         $Items
 
     }
