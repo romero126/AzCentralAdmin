@@ -77,8 +77,8 @@ function New-AzCentralAdminMachine
         # <summary>
         # Specify an VMHost
         # </summary>
-        [Parameter()]
-        [string] $VMHost,
+        #[Parameter()]
+        #[string] $VMHost,
 
         # <summary>
         # Specify an BuildDefinition
@@ -107,44 +107,44 @@ function New-AzCentralAdminMachine
         # <summary>
         # Specify a Domain
         # </summary>
-        [Parameter()]
-        [string] $Domain,
+        # [Parameter()]
+        # [string] $Domain,
 
         # <summary>
         # Specify a Forest
         # </summary>
-        [Parameter()]
-        [string] $Forest,
+        # [Parameter()]
+        # [string] $Forest,
 
         # <summary>
         # Specify a PublicFQDN
         # </summary>
-        [Parameter()]
-        [string] $PublicFQDN,
+        # [Parameter()]
+        # [string] $PublicFQDN,
 
         # <summary>
         # Specify a LoadBalancer
         # </summary>
-        [Parameter()]
-        [string] $LoadBalancer,
+        # [Parameter()]
+        # [string] $LoadBalancer,
 
         # <summary>
         # Specify a PublicIP
         # </summary>
-        [Parameter()]
-        [IPAddress] $PublicIP,
+        # [Parameter()]
+        # [IPAddress] $PublicIP,
 
         # <summary>
         # Specify a LocalIP
         # </summary>
-        [Parameter()]
-        [IPAddress] $LocalIP,
+        # [Parameter()]
+        # [IPAddress] $LocalIP,
 
         # <summary>
         # Specify a MACAddress
         # </summary>
-        [Parameter()]
-        [string] $MACAddress,
+        # [Parameter()]
+        # [string] $MACAddress,
 
         # <summary>
         # Specify a Notes
@@ -155,8 +155,8 @@ function New-AzCentralAdminMachine
         # <summary>
         # Specify Exact
         # </summary>
-        [Parameter()]
-        [switch] $Exact,
+        #[Parameter()]
+        #[switch] $Exact,
 
         # <summary>
         # Specify Tags
@@ -203,18 +203,18 @@ function New-AzCentralAdminMachine
             "Room"                    = $Room
             "Rack"                    = $Rack
             "Slot"                    = $Slot
-            "VMHost"                  = $VMHost
+            # "VMHost"                  = $VMHost
             "BuildDefinition"         = $BuildDefinition
             "BuildState"              = $BuildState
             "BuildDesiredVersion"     = $BuildDesiredVersion
             "BuildActualVersion"      = $BuildActualVersion
-            "Domain"                  = $Domain
-            "Forest"                  = $Forest
-            "PublicFQDN"              = $PublicFQDN
-            "LoadBalancer"            = $LoadBalancer
-            "PublicIP"                = "{0}" -f $PublicIP
-            "LocalIP"                 = "{0}" -f $LocalIP
-            "MACAddress"              = $MACAddress
+            # "Domain"                  = $Domain
+            # "Forest"                  = $Forest
+            # "PublicFQDN"              = $PublicFQDN
+            # "LoadBalancer"            = $LoadBalancer
+            # "PublicIP"                = "{0}" -f $PublicIP
+            # "LocalIP"                 = "{0}" -f $LocalIP
+            #"MACAddress"              = $MACAddress
             "Notes"                   = $Notes
         }
         

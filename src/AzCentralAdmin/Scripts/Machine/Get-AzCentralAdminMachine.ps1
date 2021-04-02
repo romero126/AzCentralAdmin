@@ -11,7 +11,7 @@ function Get-AzCentralAdminMachine
         # <summary>
         # Specify Name
         # </summary>
-        [Parameter(Mandatory, ValueFromPipeline, ValueFromPipelineByPropertyName, Position = 1)]
+        [Parameter(ValueFromPipeline, ValueFromPipelineByPropertyName, Position = 1)]
         [string] $Name
 
     )

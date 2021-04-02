@@ -84,8 +84,8 @@ function Set-AzCentralAdminMachine
         # <summary>
         # Specify an VMHost
         # </summary>
-        [Parameter()]
-        [string] $VMHost,
+        # [Parameter()]
+        # [string] $VMHost,
 
         # <summary>
         # Specify an BuildDefinition
@@ -114,44 +114,44 @@ function Set-AzCentralAdminMachine
         # <summary>
         # Specify a Domain
         # </summary>
-        [Parameter()]
-        [string] $Domain,
+        # [Parameter()]
+        # [string] $Domain,
 
         # <summary>
         # Specify a Forest
         # </summary>
-        [Parameter()]
-        [string] $Forest,
+        # [Parameter()]
+        # [string] $Forest,
 
         # <summary>
         # Specify a PublicFQDN
         # </summary>
-        [Parameter()]
-        [string] $PublicFQDN,
+        # [Parameter()]
+        # [string] $PublicFQDN,
 
         # <summary>
         # Specify a LoadBalancer
         # </summary>
-        [Parameter()]
-        [string] $LoadBalancer,
+        # [Parameter()]
+        # [string] $LoadBalancer,
 
         # <summary>
         # Specify a PublicIP
         # </summary>
-        [Parameter()]
-        [IPAddress] $PublicIP,
+        # [Parameter()]
+        # [IPAddress] $PublicIP,
 
         # <summary>
         # Specify a LocalIP
         # </summary>
-        [Parameter()]
-        [IPAddress] $LocalIP,
+        # [Parameter()]
+        # [IPAddress] $LocalIP,
 
         # <summary>
         # Specify a MACAddress
         # </summary>
-        [Parameter()]
-        [string] $MACAddress,
+        # [Parameter()]
+        # [string] $MACAddress,
 
         # <summary>
         # Specify a Notes
